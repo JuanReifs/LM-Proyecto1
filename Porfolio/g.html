@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Animación 3 Imágenes</title>
+  <title>Animación 4 Imágenes</title>
   <style>
     body {
       background: #111;
@@ -29,48 +29,65 @@
 
     .imagen1 {
       z-index: 1;
-      animation: animImagen1 6s infinite;
+      animation: animImagen1 8s infinite;
     }
 
     .imagen2 {
       z-index: 2;
-      animation: animImagen2 6s infinite;
+      animation: animImagen2 8s infinite;
     }
 
     .imagen3 {
       z-index: 3;
-      animation: animImagen3 6s infinite;
+      animation: animImagen3 8s infinite;
+    }
+
+    .imagen4 {
+      z-index: 4;
+      animation: animImagen4 8s infinite;
     }
 
     @keyframes animImagen1 {
       0%   { left: 0; }
-      33%  { left: 0; }
-      50%  { left: -400px; }
+      25%  { left: 0; }
+      37.5% { left: -400px; }
       100% { left: -400px; }
     }
 
     @keyframes animImagen2 {
       0%   { left: 400px; }
-      33%  { left: 400px; }
+      25%  { left: 400px; }
+      37.5% { left: 0; }
       50%  { left: 0; }
-      66%  { left: 0; }
-      83%  { left: -400px; }
+      62.5% { left: -400px; }
       100% { left: -400px; }
     }
 
     @keyframes animImagen3 {
       0%   { left: 400px; }
-      66%  { left: 400px; }
-      83%  { left: 0; }
+      50%  { left: 400px; }
+      62.5% { left: 0; }
+      75%  { left: 0; }
+      87.5% { left: -400px; }
+      100% { left: -400px; }
+    }
+
+    @keyframes animImagen4 {
+      0%   { left: 400px; }
+      75%  { left: 400px; }
+      87.5% { left: 0; }
       100% { left: 0; }
     }
   </style>
 </head>
 <body>
-  <div class="contenedor">
-    <img src="Captura de pantalla 2025-11-06 132220.png" class="imagen imagen1" alt="Imagen 1">
-    <img src="Captura de pantalla 2025-11-06 132335.png" class="imagen imagen2" alt="Imagen 2">
-    <img src="Captura de pantalla 2025-11-06 132220.png" class="imagen imagen3" alt="Imagen 3">
+  
+    <div class="contenedor">
+      <img src="NoticiasCapturas/Noticia1.png" class="imagen imagen1" alt="Imagen 1">
+      <img src="NoticiasCapturas/Noticia2.png" class="imagen imagen2" alt="Imagen 2">
+      <img src="NoticiasCapturas/Noticia3.png" class="imagen imagen3" alt="Imagen 3">
+      <img src="NoticiasCapturas/Noticia1.png" class="imagen imagen4" alt="Imagen 4">
+    </div>
   </div>
 </body>
 </html>
